@@ -69,8 +69,10 @@ function addCity(cities, city) {
 /* ----------------- Q.4 ----------------- */
 function countCitiesInCountry(cities, country) {
     let count = 0;
-    if (cities.country = country)
-        count++;
+    cities.forEach(element => {
+        if (element.country == country)
+            count++;
+    });
     return count;
   }
-//   console.log(countCitiesInCountry(cities, "France"));
+  console.log(countCitiesInCountry(cities, "France"));
